@@ -10,13 +10,19 @@
         object-fit: cover;
         height: 400px;
     }
+    @media (max-width: 767px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none !important;
+    }
+  }
   </style>
 </head>
 <body>
 
 <div class="container-fluid my-5">
     <a href="Becky.html">take me back home</a>
-  <div id="multiCardCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="multiCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
     <div class="carousel-inner">
 
       <!-- Slide 1 -->
@@ -93,10 +99,10 @@
     </div>
 
     <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#multiCardCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev can" type="button" data-bs-target="#multiCardCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#multiCardCarousel" data-bs-slide="next">
+    <button class="carousel-control-next can " type="button" data-bs-target="#multiCardCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon"></span>
     </button>
   </div>
