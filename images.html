@@ -114,8 +114,7 @@
 </div>
 
  <div class="container-fluid my-5">
-    <a href="Becky.html">take me back home</a>
-  <div id="multiCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+  <div id="multiCardCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-touch="true">
     <div class="carousel-inner">
 
       <!-- Slide 1 -->
@@ -123,32 +122,32 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card">
-              <img src="photos/men1.webp" class="card-img-top" alt="...">
+              <img src="photos/jewery9.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h5 class="card-title text-primary  ">$40</h5>
                <button class=" btn btn-outline-primary btn-lg"
-               onclick="addToCart('mens perfume', 40)">shop now</button>
+               onclick="addToCart('jewery9', 40)">shop now</button>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="photos/no1.jpg" class="card-img-top" alt="...">
+              <img src="photos/jewery3.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h5 class="card-title text-primary">$50</h5>
             <button class=" btn btn-outline-primary btn-lg"
-            onclick="addToCart('second perfume', 50)">shop now</button>
+            onclick="addToCart('jewery3', 50)">shop now</button>
 
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="photos/no5.jpg" class="card-img-top" alt="...">
+              <img src="photos/jewery12.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <h5 class="card-title">$30</h5>
               <button class=" btn btn-outline-primary btn-lg"
-              onclick="addToCart('3rd mens perfume' ,30)">shop now</button>
+              onclick="addToCart('jewery12' ,30)">shop now</button>
            </div>
             </div>
           </div>
@@ -157,35 +156,35 @@
 
       <!-- Slide 2 -->
       <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row justify-content-center align-items-center">
+          <div class=" col-md-4 ">
             <div class="card">
-              <img src="photos/no6.jpg" class="card-img-top" alt="...">
+              <img src="photos/jewery7.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">$26</h5>
                 <button class=" btn btn-outline-primary btn-lg"
-              onclick="addToCart('3rd mens perfume' ,25)">shop now</button>
+              onclick="addToCart('jewery7' ,25)">shop now</button>
 
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 ">
             <div class="card">
-              <img src="photos/no4.jpg" class="card-img-top" alt="...">
+              <img src="photos/jewery14.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">$60</h5>
                 <button class=" btn btn-outline-primary btn-lg"
-              onclick="addToCart('3rd mens perfume' ,60)">shop now</button>
+              onclick="addToCart('jewery14' ,60)">shop now</button>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
-              <img src="photos/home.jpg" class="card-img-top" alt="...">
+              <img src="photos/jewery1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">$67</h5>
                    <button class=" btn btn-outline-primary btn-lg"
-              onclick="addToCart('3rd mens perfume' ,67)">shop now</button>
+              onclick="addToCart('jewery1' ,67)">shop now</button>
               </div>
             </div>
           </div>
@@ -209,12 +208,22 @@
    <p>Total: USD <span id="total">0</span></p>
 </div>--->
 <!-- Floating Cart Summary -->
-<div id="floating-cart" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; width: 300px;" class="card shadow">
+<div id="floating-cart" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; width: 200px;" class="card shadow">
   <div class="card-body">
     <h5 class="card-title">Your Cart</h5>
     <ul id="cart-items" class="list-group list-group-flush mb-2"></ul>
     <p><strong>Total:</strong> USD <span id="total">0</span></p>
-    <button onclick="sendToWhatsApp()" class="btn btn-success w-100">Send to WhatsApp</button>
+    <div class="row ">
+      <div class="col">
+<button onclick="sendToWhatsApp()" class="btn btn-success ">Send to WhatsApp</button>
+      </div>
+      <div class="col">
+<button onclick="cart = []; updateCart();" class="btn btn-danger w-100  mt-2">Clear Cart</button>
+
+      </div>
+    </div>
+    
+    
   </div>
 </div>
 

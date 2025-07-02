@@ -496,16 +496,17 @@
     </section>
 
     <!---off canvas-->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
         <div class="offcanvas-header">
-            <h3 class="offcanvas-title" id="sidebar-label">choose from our vast products</h3>
+            <h3 class="offcanvas-title text-light" id="sidebar-label">choose from our vast products</h3>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
         </div>
 
         <div class="offcanvas-body">
-            <p> press any button , it will direct you to differents pages
-                lets say ypu want perfumes, press the perfume button and 
-                feel your eyes with our beautifil products.
+            <p class="text-secondary"> 
+                All buttons direct to the same page, you will have to 
+                <strong>scrolll down </strong>see other products.<br>
+              perfumes come first, followed by jewery and lastly deodrants
             </p>
 
             <!---dropdown-->
@@ -514,9 +515,9 @@
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown"
                 data-bs-toggle="dropdown">press any button</button>
                 <ul class="dropdown-menu" aria-labelledby="book-dropdown">
-                <li ><a href="images.html" class="dropdown-item btn btn-outline-success">go to gallery </a></li>
-                <li><a href="#" class="dropdown-item" >conquering vite</a></li>
-                 <li><a href="#" class="dropdown-item" >leveling up your next.js</a></li>
+                <li ><a href="images.html" class="dropdown-item btn btn-outline-success">perfumes </a></li>
+                <li><a href="images.html" class="dropdown-item" >jewery....</a></li>
+                 <li><a href="images.html" class="dropdown-item" >deodrants</a></li>
                 </ul>
             </div>
         </div>
@@ -525,11 +526,11 @@
     </div>
 
     <!---get updates / modal trigger-->
-    <section class="bg-light">
+   <!-- <section class="bg-dark">
         <div class="container">
             <div class="text-center">
                 <h2>stay in the loop</h2>
-                <p class="lead">get the latest updates as they happen.....</p>
+                <p class="text-secondary">get the latest updates as they happen.....</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
@@ -544,9 +545,57 @@
             </div>
 
         </div>
-    </section>
+    </section>-->
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container -fluid">
+    <div class="row">
+
+      <!-- Brand Info -->
+      <div class="col-md-4 mb-4">
+        <h4 class="text-uppercase fw-bold">Ravishing Scents</h4>
+        <p>Your ultimate destination for premium perfumes and timeless fragrances.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 mb-4">
+        <h5 class="fw-semibold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="images.html" class="text-light text-decoration-none">Shop</a></li>
+          <li><a href="#" class="text-light text-decoration-none">About</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold">Contact</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-geo-alt-fill me-2"></i> Kampala, Uganda</li>
+          <li><i class="bi bi-telephone-fill me-2"></i> +256 7569474658</li>
+          <li><i class="bi bi-envelope-fill me-2"></i> info@ravishingperfume.com</li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-semibold">Follow Us</h5>
+        <a href="#" class="text-light fs-4 me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light fs-4 me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light fs-4 me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-light fs-4"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="text-center mt-4 border-top pt-3">
+      <p class="mb-0">&copy; 2025 Ravishing Scents. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
     <!---modal itself-->
-    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+   <!--- <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -568,7 +617,7 @@
             </div>
         </div>
 
-    </div>
+    </div>-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" ></script>
  <script src="beck.js"></script>
     
