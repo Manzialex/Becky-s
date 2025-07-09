@@ -59,10 +59,27 @@ font-size: 40px;
 .home h1{
     font-size: 50px;
 }*/
+@keyframes fadeIn{
+    from { opacity: 0;
+    transform: translateY(20px);}
+
+    to { opacity: 1;
+     transform: translateY(0);}
+}
+.pricing{
+    animation: fadeIn 1s ease-in-out;
+}
+.card-price{
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
 .card-price:hover{
-    box-shadow: 0 20px 30px rgba(0,0,0,0.25);
-    transition: 0.2s ease-out;
-    transform: translateY(20px);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 .glance-pic:hover{
            transform: translatex(30px);
@@ -180,3 +197,47 @@ font-size: 40px;
 
 
        }
+
+       .footer{
+        height: 90vh;
+        background: #000;
+       }
+
+       .quick-links li{
+        padding-bottom: 15px;
+        padding-top: 15px;
+        
+
+       }
+
+       .quick-links a {
+    transition: color 0.3s ease;
+  }
+  .legal li {
+        padding-bottom: 10px;
+        padding-top: 10px;
+         
+  }
+  .legal li a:hover{
+    color:red !important; 
+    text-decoration: underline !important;
+  }
+
+
+         .quick-links a:hover {
+    color:red !important; 
+    text-decoration: underline !important;
+  }
+
+  @media (max-width: 576px) {
+      .footer{
+        height: 100vh;
+      }
+    .quick-links li{
+        padding: 2px !important;
+       }
+       .legal li{
+        padding: 2px;
+       }
+    
+  }
