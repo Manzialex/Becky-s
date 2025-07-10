@@ -85,7 +85,7 @@ font-size: 40px;
            transform: translatex(30px);
            transition: 0.2s ease-in-out;
 }
-.customerreviw{
+ /*.customerreviw{
             width: 100%;
             height: 100vh;
             background: #f6fbff;
@@ -173,7 +173,7 @@ font-size: 40px;
         .sidebar p{
             width: 25px;
             padding: 5px;
-           /* background: #fff;*/
+           /* background: #fff;
             cursor: pointer;
             color: #fff;
             font-size: 20px;
@@ -196,7 +196,7 @@ font-size: 40px;
         z-index: -1;
 
 
-       }
+       }*/
 
        .footer{
         height: 90vh;
@@ -240,4 +240,84 @@ font-size: 40px;
         padding: 2px;
        }
     
+  }
+
+
+  .products-card{
+    background: transparent;
+    border: none;
+    position: relative;
+    box-shadow: none;
+    cursor: pointer;
+     flex: 0 0 25%; /* 4 cards in view */
+     padding: 0 10px;
+    width: calc(100% / 4);
+    transition: 0.2s ease-out;
+  }
+  .products-card img{
+    width: 300px;
+    height: 250px;
+    float: right!important;
+     }
+.products-card:hover{
+  box-shadow: 1px 4px 8px 2px  rgba(0,0,0,0.15);
+ /* transform: translateY(8px);*/
+ 
+}
+   .carousel-row-wrapper {
+    overflow: hidden;
+    position: relative;
+    
+  }
+
+  .carousel-scroll-track {
+    display: flex;
+    gap: 5px;
+    transition: transform 0.5s ease-in-out;
+    height: 350px;
+      }
+  .carousel-controls{
+    text-align: center;
+    margin-top:-300px;
+    cursor: pointer;
+    position: absolute;
+   
+  }
+
+  @media(max-width: 900px){
+           .products-card{
+            width: calc(100%/2);
+           }
+
+  }
+  @media (max-width: 480px){
+           .products-card img{
+            width: 100%;
+           }
+
+           
+  }
+  fa{
+    font-size: 30px;
+    color: red;
+  }
+  .card-body{
+    text-align: center;
+    padding-top: 10px!important;
+
+  }
+    
+   .hover-text{
+    position: absolute;
+    display: none;
+  }
+  .images-img{
+    opacity: 1;
+  }
+ .products-card:hover .images-img{
+  opacity: 0;
+}
+  .products-card:hover .hover-text{
+      display: block;
+
   }
